@@ -1,0 +1,710 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock  %}
+{% block body %}
+<!-- 
+    *******************
+    BANNER
+    ******************* 
+    -->
+    <div id="scroll" class="top-header item2 overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-7 col-lg-8">
+              <div class="wrapper">
+                <div class="heading">Cloud VPS</div>
+                <div class="subheading">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-5 col-lg-4">
+              <div class="wrapper float-right pt-2 w-100 text-center">
+                <div class="subheading">
+                  <a href="index.html" class="link">home</a> <i class="fas fa-star"></i>
+                  <a href="#" class="link">pages</a> <i class="fas fa-star"></i>
+                  <a href="services.html" class="link active">VPS</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 
+      *******************
+      FILTER   
+      ******************* 
+      -->
+      <main class="cd-main-content">
+        <div class="cd-tab-filter-wrapper">
+          <div class="cd-tab-filter">
+            <ul class="cd-filters">
+              <li class="placeholder"> 
+                <a data-type="all" href="#0"> All Servers</a>
+              </li> 
+              <li class="filter"><a class="selected" href="#0" data-type="all">All Servers</a></li>
+              <li class="filter" data-filter=".linux"><a href="#0" data-type="linux">Linux Cloud VPS </a></li>
+              <li class="filter" data-filter=".windows"><a href="#0" data-type="windows">Windows Cloud VPS </a></li>
+              <li class="filter" data-filter=".managed"><a href="#0" data-type="managed">Managed Cloud VPS </a></li>
+            </ul>
+          </div>
+        </div>
+        <section class="cd-gallery">
+          <div class="container">
+            <ul class="p-0">
+              <li class="mix managed cores2 ram2 data3">
+                <div class="refine">
+                  <div class="wrapper bg-white">
+                    <div class="plans badge feat bg-green">Popular</div> 
+                    <img class="mb-3" src="{% static 'fonts/svg/managedserver.svg' %}" height="65" alt="">
+                    <div class="title">Managed Cloud VPS</div>
+                    <div class="fromer">cPanel or Plesk Onyx</div>
+                    <div class="price"><sup>$</sup>129.99 <span class="period">/mo</span></div>
+                    <div class="list-info">
+                      <div>2 vCPU</div>
+                      <div>2GB RAM</div>
+                      <div>216GB SSD</div> 
+                      <div>2 IP address</div>
+                      <div>Support 24x7x365</div>
+                    </div>
+                    <a href="" class="btn btn-default-green-fill">Configure</a>
+                  </div>
+                </div>
+              </li>
+              <li class="mix linux cores2 ram4 euro data2">
+                <div class="refine">
+                  <div class="wrapper bg-white">
+                    <div class="plans badge feat bg-green">Top Sales</div> 
+                    <img class="mb-3" src="{% static 'fonts/svg/linuxserver.svg' %}" height="65" alt="">
+                    <div class="title">Linux Cloud VPS</div>
+                    <div class="fromer">cPanel</div>
+                    <div class="price"><sup>$</sup>99.90 <span class="period">/mo</span></div>
+                    <div class="list-info">
+                      <div>2 vCPU</div>
+                      <div>4GB RAM</div>
+                      <div>256GB SSD</div> 
+                      <div>2 IP address</div>
+                      <div>Unlimited Traffic</div>
+                    </div>
+                    <a href="" class="btn btn-default-green-fill">Configure</a>
+                  </div>
+                </div>
+              </li>
+              <li class="mix linux cores2 ram4 cny data1">
+                <div class="refine">
+                  <div class="wrapper bg-white">
+                    <img class="mb-3" src="{% static 'fonts/svg/linuxserver.svg' %}" height="65" alt="">
+                    <div class="title">Linux Cloud VPS</div>
+                    <div class="fromer">cPanel</div>
+                    <div class="price"><sup>$</sup>120.99 <span class="period">/mo</span></div>
+                    <div class="list-info">
+                      <div>2 vCPU</div>
+                      <div>4GB RAM</div>
+                      <div>256GB SSD</div> 
+                      <div>2 IP address</div>
+                      <div>Unlimited Traffic</div>
+                    </div>
+                    <a href="" class="btn btn-default-green-fill">Configure</a>
+                  </div>
+                </div>
+              </li>
+              <li class="mix windows cores4 ram8 usd data1">
+                <div class="refine">
+                  <div class="wrapper bg-white">
+                    <img class="mb-3" src="{% static 'fonts/svg/windowserver.svg' %}" height="65" alt="">
+                    <div class="title">Windows Cloud VPS</div>
+                    <div class="fromer">Plesk Onyx</div>
+                    <div class="price"><sup>$</sup>140.29 <span class="period">/mo</span></div>
+                    <div class="list-info">
+                      <div>4 vCPU</div>
+                      <div>8GB RAM</div>
+                      <div>512GB SSD</div> 
+                      <div>2 IP address</div>
+                      <div>Remote Access</div>
+                    </div>
+                    <a href="" class="btn btn-default-green-fill">Configure</a>
+                  </div>
+                </div>
+              </li>
+              <li class="mix managed cores4 ram16 usd data2">
+                <div class="refine">
+                  <div class="wrapper bg-white">
+                    <img class="mb-3" src="{% static 'fonts/svg/managedserver.svg' %}" height="65" alt="">
+                    <div class="title">Managed Cloud VPS</div>
+                    <div class="fromer">cPanel or Plesk Onyx</div>
+                    <div class="price"><sup>$</sup>199.99 <span class="period">/mo</span></div>
+                    <div class="list-info">
+                      <div>4 vCPU</div>
+                      <div>16GB RAM</div>
+                      <div>216GB SSD</div> 
+                      <div>4 IP address</div>
+                      <div>Support 24x7x365</div>
+                    </div>
+                    <a href="" class="btn btn-default-green-fill">Configure</a>
+                  </div>
+                </div>
+              </li>
+              <li class="mix linux cores4 ram16 usd data1">
+                <div class="refine">
+                  <div class="wrapper bg-white">
+                    <div class="plans badge feat bg-green">HOT</div> 
+                    <img class="mb-3" src="{% static 'fonts/svg/linuxserver.svg' %}" height="65" alt="">
+                    <div class="title">Linux CLoud VPS</div>
+                    <div class="fromer">cPanel</div>
+                    <div class="price"><sup>$</sup>280.40 <span class="period">/mo</span></div>
+                    <div class="list-info">
+                      <div>4 vCPU</div>
+                      <div>16GB RAM</div>
+                      <div>256GB SSD</div> 
+                      <div>2 IP address</div>
+                      <div>Unlimited Traffic</div>
+                    </div>
+                    <a href="" class="btn btn-default-green-fill">Configure</a>
+                  </div>
+                </div>
+              </li>
+              <li class="mix windows cores8 ram64 euro data4">
+                <div class="refine">
+                  <div class="wrapper bg-white">
+                    <img class="mb-3" src="{% static 'fonts/svg/windowserver.svg' %}" height="65" alt="">
+                    <div class="title">Windows Cloud VPS</div>
+                    <div class="fromer">Plesk Onyx</div>
+                    <div class="price"><sup>$</sup>299.99 <span class="period">/mo</span></div>
+                    <div class="list-info">
+                      <div>8 vCPU</div>
+                      <div>64GB RAM</div>
+                      <div>512GB SSD</div> 
+                      <div>4 IP address</div>
+                      <div>Remote Access</div>
+                    </div>
+                    <a href="" class="btn btn-default-green-fill">Configure</a>
+                  </div>
+                </div>
+              </li>
+              <li class="mix managed cores8 ram32 cny data2">
+                <div class="refine">
+                  <div class="wrapper bg-white">
+                    <div class="plans badge feat bg-green">King</div> 
+                    <img class="mb-3" src="{% static 'fonts/svg/managedserver.svg' %}" height="65" alt="">
+                    <div class="title">Managed CLoud VPS</div>
+                    <div class="fromer">cPanel or Plesk Onyx</div>
+                    <div class="price"><sup>$</sup>360.99 <span class="period">/mo</span></div>
+                    <div class="list-info">
+                      <div>8 vCPU</div>
+                      <div>32GB RAM</div>
+                      <div>512GB SSD</div> 
+                      <div>4 IP address</div>
+                      <div>Support 24x7x365</div>
+                    </div>
+                    <a href="" class="btn btn-default-green-fill">Configure</a>
+                  </div>
+                </div>
+              </li>
+              <li class="mix linux cores8 ram16 euro data3">
+                <div class="refine">
+                  <div class="wrapper bg-white">
+                    <img class="mb-3" src="{% static 'fonts/svg/linuxserver.svg' %}" height="65" alt="">
+                    <div class="title">Linux Cloud VPS</div>
+                    <div class="fromer">cPanel</div>
+                    <div class="price"><sup>$</sup>120.99 <span class="period">/mo</span></div>
+                    <div class="list-info">
+                      <div>8 vCPU</div>
+                      <div>16GB RAM</div>
+                      <div>256GB SSD</div> 
+                      <div>4 IP address</div>
+                      <div>Unlimited Traffic</div>
+                    </div>
+                    <a href="" class="btn btn-default-green-fill">Configure</a>
+                  </div>
+                </div>
+              </li>
+              <li class="mix windows cores16 ram64 euro data4">
+                <div class="refine">
+                  <div class="wrapper bg-white">
+                    <img class="mb-3" src="{% static 'fonts/svg/windowserver.svg' %}" height="65" alt="">
+                    <div class="title">Windows Cloud VPS</div>
+                    <div class="fromer">Plesk Onyx</div>
+                    <div class="price"><sup>$</sup>590.00 <span class="period">/mo</span></div>
+                    <div class="list-info">
+                      <div>16 vCPU</div>
+                      <div>64GB RAM</div>
+                      <div>1TB SSD</div> 
+                      <div>6 IP address</div>
+                      <div>Remote Access</div>
+                    </div>
+                    <a href="" class="btn btn-default-green-fill">Configure</a>
+                  </div>
+                </div>
+              </li>
+              <li class="mix linux cores16 ram32 cny data2">
+                <div class="refine">
+                  <div class="wrapper bg-white">
+                    <img class="mb-3" src="{% static 'fonts/svg/linuxserver.svg' %}" height="65" alt="">
+                    <div class="title">Linux Cloud VPS</div>
+                    <div class="fromer">cPanel</div>
+                    <div class="price"><sup>$</sup>400.99 <span class="period">/mo</span></div>
+                    <div class="list-info">
+                      <div>16 vCPU</div>
+                      <div>32GB RAM</div>
+                      <div>512GB SSD</div> 
+                      <div>4 IP address</div>
+                      <div>Unlimited Traffic</div>
+                    </div>
+                    <a href="" class="btn btn-default-green-fill">Configure</a>
+                  </div>
+                </div>
+              </li>
+              <li class="mix managed cores16 ram64 cny data2">
+                <div class="refine">
+                  <div class="wrapper bg-white">
+                    <img class="mb-3" src="{% static 'fonts/svg/managedserver.svg' %}" height="65" alt="">
+                    <div class="title">Managed Cloud VPS</div>
+                    <div class="fromer">cPanel or Plesk Onyx</div>
+                    <div class="price"><sup>$</sup>620.99 <span class="period">/mo</span></div>
+                    <div class="list-info">
+                      <div>16 vCPU</div>
+                      <div>64GB RAM</div>
+                      <div>1TB SSD</div> 
+                      <div>8 IP address</div>
+                      <div>Support 24x7x365</div>
+                    </div>
+                    <a href="" class="btn btn-default-green-fill">Configure</a>
+                  </div>
+                </div>
+              </li>
+              <li class="gap"></li>
+              <li class="gap"></li>
+              <li class="gap"></li>
+            </ul>
+            <div class="cd-fail-message">No results found</div>
+          </div>
+        </section>
+        <div class="cd-filter">
+          <form>
+            <div class="cd-filter-block">
+              <h4>Search Your VPS</h4>
+              <div class="cd-filter-content">
+                <input type="search" placeholder="Search...">
+              </div>
+            </div>
+            <div class="cd-filter-block hider">
+              <h4>Choose Server</h4>
+              <ul class="cd-filter-content cd-filters list">
+                <li>
+                  <input class="filter selected" data-type="all" type="radio" name="radioButton" id="radio4">
+                  <label class="radio-label" for="radio4">All Servers</label>
+                </li>
+                <li>
+                  <input class="filter" data-filter=".linux" data-type="linux" type="radio" name="radioButton" id="radio5">
+                  <label class="radio-label" for="radio5">Linux VPS</label>
+                </li>
+                <li>
+                  <input class="filter" data-filter=".windows" data-type="windows" type="radio" name="radioButton" id="radio6">
+                  <label class="radio-label" for="radio6">Windows VPS</label>
+                </li>
+                <li>
+                  <input class="filter" data-filter=".managed" data-type="managed" type="radio" name="radioButton" id="radio7">
+                  <label class="radio-label" for="radio7">Managed VPS</label>
+                </li>
+              </ul> <!-- cd-filter-content -->
+            </div> <!-- cd-filter-block -->
+            <div class="cd-filter-block">
+              <h4>Cores</h4>
+              <ul class="cd-filter-content cd-filters list">
+                <li>
+                  <input class="filter" data-filter=".cores2" type="checkbox" id="checkbox1">
+                    <label class="checkbox-label" for="checkbox1">2 Cores</label>
+                </li>
+                <li>
+                  <input class="filter" data-filter=".cores4" type="checkbox" id="checkbox2">
+                  <label class="checkbox-label" for="checkbox2">4 Cores</label>
+                </li>
+                <li>
+                  <input class="filter" data-filter=".cores8" type="checkbox" id="checkbox3">
+                  <label class="checkbox-label" for="checkbox3">8 Cores</label>
+                </li>
+                <li>
+                  <input class="filter" data-filter=".cores16" type="checkbox" id="checkbox4">
+                  <label class="checkbox-label" for="checkbox4">16 Cores</label>
+                </li>
+              </ul>
+            </div>
+            <div class="cd-filter-block">
+              <h4>RAM</h4>
+              <ul class="cd-filter-content cd-filters list">
+                <li>
+                  <input class="filter" data-filter=".ram2" type="checkbox" id="checkbox5">
+                    <label class="checkbox-label" for="checkbox5">2 RAM</label>
+                </li>
+                <li>
+                  <input class="filter" data-filter=".ram4" type="checkbox" id="checkbox6">
+                  <label class="checkbox-label" for="checkbox6">4 RAM</label>
+                </li>
+                <li>
+                  <input class="filter" data-filter=".ram8" type="checkbox" id="checkbox7">
+                  <label class="checkbox-label" for="checkbox7">8 RAM</label>
+                </li>
+                <li>
+                  <input class="filter" data-filter=".ram16" type="checkbox" id="checkbox8">
+                  <label class="checkbox-label" for="checkbox8">16 RAM</label>
+                </li>
+                <li>
+                  <input class="filter" data-filter=".ram32" type="checkbox" id="checkbox9">
+                  <label class="checkbox-label" for="checkbox9">32 RAM</label>
+                </li>
+                <li>
+                  <input class="filter" data-filter=".ram64" type="checkbox" id="checkbox10">
+                  <label class="checkbox-label" for="checkbox10">64 RAM</label>
+                </li>
+              </ul>
+            </div>
+            <div class="cd-filter-block">
+              <h4>Currency</h4>
+              <ul class="cd-filter-content cd-filters list">
+                <li>
+                  <input class="filter" data-filter=".usd" type="radio" name="radioButton" id="radio1">
+                  <label class="radio-label" for="radio1">USD</label>
+                </li>
+                <li>
+                  <input class="filter" data-filter=".euro" type="radio" name="radioButton" id="radio2">
+                  <label class="radio-label" for="radio2">EURO</label>
+                </li>
+                <li>
+                  <input class="filter" data-filter=".cny" type="radio" name="radioButton" id="radio3">
+                  <label class="radio-label" for="radio3">CNY</label>
+                </li>
+              </ul>
+            </div>
+            <div class="cd-filter-block">
+              <h4>Locations</h4>
+              <div class="cd-filter-content">
+                <div class="cd-select cd-filters">
+                  <select class="filter" name="selectThis" id="selectThis">
+                    <option value="">Select Datacenter</option>
+                    <option value=".data1">New York</option>
+                    <option value=".data2">Atlanta</option>
+                    <option value=".data3">Moscow</option>
+                    <option value=".data4">Portugal</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </form>
+          <a href="#0" class="cd-close">Close</a>
+        </div>
+        <a href="#0" class="cd-filter-trigger"> Filters</a>
+      </main>
+      <!-- 
+      *******************
+      WHY CHOOSE CLOUDY
+      ******************* 
+      -->
+      <section class="services classic sec-normal overlay item3">
+        <div class="container">
+          <div class="service-wrap">
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <h2 class="section-heading text-white">Why choose Cloud VPS Servers</h2>
+                <p class="section-subheading text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <div class="service-section">
+                  <img src="{% static 'fonts/svg/code.svg' %}" height="60" alt="">
+                  <div class="title">Full Root Access</div>
+                  <p class="subtitle">
+                    Excepteur sint occaecat cupidatat non proident 
+                  </p>
+                  <a href="" class="btn btn-default-green">Read more</a>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <div class="service-section">
+                  <img src="{% static 'fonts/svg/chart.svg' %}" height="60" alt="">
+                  <div class="title">Instant Provisioning</div>
+                  <p class="subtitle">
+                    Duis aute irure dolor in reprehenderit in voluptate. 
+                  </p>
+                  <a href="" class="btn btn-default-green">Read more</a>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <div class="service-section">
+                  <img src="{% static 'fonts/svg/clock.svg' %}" height="60" alt="">
+                  <div class="title">99.9% Uptime</div>
+                  <p class="subtitle">
+                    Duis aute irure dolor in reprehenderit in voluptate
+                  </p>
+                  <a href="" class="btn btn-default-green">Read more</a>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <div class="service-section">
+                  <div class="plans badge feat bg-green">Softaculous</div> 
+                  <img src="{% static 'fonts/svg/support.svg' %}" height="60" alt="">
+                  <div class="title">System Admin Support</div>
+                  <p class="subtitle">
+                    Excepteur sint occaecat cupidatat non proident
+                  </p>
+                  <a href="" class="btn btn-default-green">Read more</a>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <div class="service-section">
+                  <div class="plans badge feat bg-green">Control Panel</div> 
+                  <img src="{% static 'fonts/svg/window.svg' %}" height="60" alt="">
+                  <div class="title">Intuitive Dashboard</div>
+                  <p class="subtitle">
+                    Excepteur sint occaecat cupidatat non proident
+                  </p>
+                  <a href="" class="btn btn-default-green">Read more</a>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <div class="service-section">
+                  <img src="{% static 'fonts/svg/money.svg' %}" height="60" alt="">
+                  <div class="title">30 Day Money-Back</div>
+                  <p class="subtitle">
+                    Excepteur sint occaecat cupidatat non proident
+                  </p>
+                  <a href="" class="btn btn-default-green">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </section>
+      <!-- 
+      *******************
+      PRICING TABLES   
+      ******************* 
+      -->
+      <section class="pricing special sec-normal sec-bg1 sec-grad-grey">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-sm-12 text-center">
+              <h2 class="section-heading">Low Cost Cloud Servers</h2>
+              <p class="section-subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <a class="golink" href="#scroll">If you don't find your best plan, search through filter above</a>
+              </p>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <div class="wrapper first">
+                <img class="mb-3" src="{% static 'fonts/svg/managedserver.svg' %}" height="65" alt="">
+                <div class="title">Managed Server</div>
+                <div class="fromer">cPanel or Plesk Onyx</div>
+                <div class="price"><sup>$</sup>98.99 <span class="period">/mo</span></div>
+                <ul class="list-info">
+                  <li>2 vCPU</li>
+                  <li>2GB RAM</li>
+                  <li>216GB SSD</li>
+                  <li>2 IP address</li>
+                  <li>Support 24x7x365</li>
+                </ul>
+                <a href="" class="btn btn-default-green-fill">Configure</a>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <div class="wrapper">
+                <div class="plans badge feat bg-green">Most Popular</div>
+                <img class="mb-3" src="{% static 'fonts/svg/linuxserver.svg' %}" height="65" alt="">
+                <div class="title">Linux Server</div>
+                <div class="fromer">cPanel</div>
+                <div class="price"><sup>$</sup>76.90 <span class="period">/mo</span></div>
+                <ul class="list-info">
+                  <li>2 vCPU</li>
+                  <li>4GB RAM</li>
+                  <li>256GB SSD</li>
+                  <li>2 IP address</li>
+                  <li>Unlimited Traffic</li>
+                </ul>
+                <a href="" class="btn btn-default-green-fill">Configure</a>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <div class="wrapper third">
+                <img class="mb-3" src="{% static 'fonts/svg/windowserver.svg' %}" height="65" alt="">
+                <div class="title">Windows Server</div>
+                <div class="fromer">Plesk Onyx</div>
+                <div class="price"><sup>$</sup>110.99 <span class="period">/mo</span></div>
+                <ul class="list-info">
+                  <li>2 vCPU</li>
+                  <li>4GB RAM</li>
+                  <li>512GB SSD</li>
+                  <li>2 IP address</li>
+                  <li>Remote Access</li>
+                </ul>
+                <a href="" class="btn btn-default-green-fill">Configure</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 
+      *******************
+      VIDEO
+      ******************* 
+      -->
+      <section class="services classic overlay item3 mb-80">
+        <div class="container">
+          <div class="sec-main m-0 shadow-none">
+            <div class="service-wrap">
+              <div class="row">
+                <div class="col-sm-12 text-center">
+                  <a href="#" class="btn btn-default-green-fill" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/3aYUjm35wN0">Watch Cloudy Data Center</a><br><br>
+                  <h2 class="section-heading text-white">The best place for your European Data Center</h2>
+                  <div id="videoModal" class="modal bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+                    <button type="button" class="close rebutton" data-dismiss="modal" aria-hidden="true">&#x2715;</button>
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content border-0">
+                          <div>
+                              <iframe class="border-0 movie"></iframe>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 
+      *******************
+      FAQ
+      ******************* 
+      -->
+      <section>
+        <div class="faq">
+          <div class="container">
+            <div class="sec-main sec-bg1">
+              <div class="row">
+                <div class="col-md-12 col-sm-12 text-center">
+                  <h2 class="section-heading">Cloud VPS Servers FAQs</h2>
+                  <p class="section-subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="col-sm-12">
+                  <div class="accordion faq pt-5">
+                    <div class="panel-wrap">
+                      <div class="panel-title">
+                        <span>Do the Virtual Private Servers have a backup policy?</span>
+                        <div class="float-right">
+                          <i class="fa fa-plus"></i>
+                          <i class="fa fa-minus"></i>
+                        </div>
+                      </div>
+                      <div class="panel-collapse">
+                        <div class="wrapper-collapse">
+                          <div class="info">
+                            <ul class="list">
+                              <li>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel-wrap">
+                      <div class="panel-title">
+                        <span>What are the benefits of Cloud VPS?</span>
+                        <div class="float-right">
+                          <i class="fa fa-plus"></i>
+                          <i class="fa fa-minus"></i>
+                        </div>
+                      </div>
+                      <div class="panel-collapse">
+                        <div class="wrapper-collapse">
+                          <div class="info">
+                            <ul class="list">
+                              <li>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel-wrap">
+                      <div class="panel-title">
+                        <span>Is Email Hosting included?</span>
+                        <div class="float-right">
+                          <i class="fa fa-plus"></i>
+                          <i class="fa fa-minus"></i>
+                        </div>
+                      </div>
+                      <div class="panel-collapse">
+                        <div class="wrapper-collapse">
+                          <div class="info">
+                            <ul class="list">
+                              <li>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel-wrap">
+                      <div class="panel-title">
+                        <span>What type of support do you offer?</span>
+                        <div class="float-right">
+                          <i class="fa fa-plus"></i>
+                          <i class="fa fa-minus"></i>
+                        </div>
+                      </div>
+                      <div class="panel-collapse">
+                        <div class="wrapper-collapse">
+                          <div class="info">
+                            <ul class="list">
+                              <li>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div>  
+          </div>
+        </div>
+      </section>
+      <!-- 
+      *******************
+      SECTIONS
+      *******************
+      -->
+      <section>
+        <div class="h-services">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="wrap-service">
+                  <i class="icon-indicateleft pasl opacity-3"></i>
+                  <img class="mb-3" src="{% static 'fonts/svg/vps.svg' %}" height="65" alt="">
+                  <div class="heading">Dedicated Servers</div>
+                  <div class="text-info">Lorem Ipsum is simply dummy text of the printing and typesetting.</div>
+                  <a href="dedicated.html" class="btn btn-default-green">Check now</a>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="wrap-service">
+                  <i class="icon-indicateright pasr opacity-3"></i>
+                  <img class="mb-3" src="{% static 'fonts/svg/reseller.svg' %}" height="65" alt="">
+                  <div class="heading">Cloud Reseller</div>
+                  <div class="text-info">Lorem Ipsum is simply dummy text of the printing and typesetting.</div>
+                  <a href="reseller.html" class="btn btn-default-green">Check now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+{% endblock  %}

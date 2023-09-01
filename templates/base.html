@@ -101,7 +101,7 @@
                               <i class="icon-cloudfiber"></i>
                             </div>
                             <div class="media-body">
-                              <a class="menu-item" href="hosting.html">Cloud Hosting</a>
+                              <a class="menu-item" href="{% url 'basic_server' %}">Cloud Hosting</a>
                               <p>Lorem ipsum dolor sit amet</p>
                             </div>
                           </div>
@@ -110,7 +110,7 @@
                               <i class="icon-reseller"></i>
                             </div>
                             <div class="media-body">
-                              <a class="menu-item" href="reseller.html">Cloud Reseller</a>
+                              <a class="menu-item" href="{% url 'resell_server' %}">Cloud Reseller</a>
                               <p>Adipiscing integer act lacinia</p>
                             </div>
                           </div>
@@ -176,16 +176,7 @@
                     <li class="menu-item"><a href="login.html">Client Area</a></li>
                   </ul>
                 </li>
-                <li class="menu-item menu-item-has-children">
-                  <a href="#">E-Shop</a>
-                  <ul class="sub-menu">
-                    <li class="menu-item"><a href="shop.html">e-Shop Products</a></li>
-                    <li class="menu-item"><a href="shop-2.html">e-Shop Sidebar</a> <div class="menu badge feat bg-green">NEW</div></li>
-                    <li class="menu-item"><a href="shop-3.html">e-Shop Product Details</a></li>
-                    <li class="menu-item"><a href="checkout.html">Checkout</a></li>
-                    <li class="menu-item"><a href="cart.html">Cart</a></li>
-                  </ul>
-                </li>
+                
                 <li class="menu-item menu-item-has-children">
                   <a href="#">Blog</a>
                   <ul class="sub-menu">
@@ -194,11 +185,10 @@
                     <li class="menu-item"><a href="blog-details.html">Blog Details</a></li>
                   </ul>
                 </li>
-                <li class="menu-item menu-item-has-children">
-                  <a href="#">Features</a>
+                <li class="menu-item menu-item-has-children menu-last">
+                  <a href="#">About Us</a>
                   <ul class="sub-menu">
-                    <li class="menu-item"><a href="elements.html">Elements</a></li>
-                    <li class="menu-item"><a href="pricing-tables.html">Pricing Tables</a></li>
+                    <li class="menu-item"><a href="contact.html">Contact Us</a></li>
                   </ul>
                 </li>
                 <li class="menu-item menu-item-has-children menu-last">
@@ -208,6 +198,12 @@
                     <li class="menu-item"><a href="contact.html">Contact Us</a></li>
                     <li class="menu-item"><a href="help.html">Help</a></li>
                     <li class="menu-item"><a href="faq.html">Faq</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-has-children menu-last">
+                  <a href="{% url 'contact_us' %}">Contact Us</a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="contact.html">Contact Us</a></li>
                   </ul>
                 </li>
               </ul>
