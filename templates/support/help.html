@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock title %}
+{% block body %}
+<!--
+*******************
+BANNER
+******************* 
+-->
+<div class="top-header overlay bg-team">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-7 col-lg-8">
+        <div class="wrapper">
+          <div class="heading">Support 24x7x365</div>
+          <div class="subheading">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-5 col-lg-4">
+        <div class="wrapper float-right pt-2 w-100 text-center">
+          <div class="subheading">
+            <a href="index.html" class="link">home</a> <i class="fas fa-star"></i>
+            <a href="#" class="link">pages</a> <i class="fas fa-star"></i>
+            <a href="services.html" class="link active">about us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 
+*******************
+SUPPORT  
+*******************
+-->
+<section class="sec-bg1 pb-80 sec-grad-grey">
+  <div class="h-services">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="wrap-service">
+            <img class="mb-3" src="{% static 'fonts/svg/livechat.svg' %}" height="65" alt="">
+            <div class="heading">Live Chat</div>
+            <div class="text-info">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+            <a href="" class="btn btn-default-green">Online Chat</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="wrap-service">
+            <img class="mb-3" src="{% static 'fonts/svg/emailopen.svg' %}" height="65" alt="">
+            <div class="heading">Send Ticket</div>
+            <div class="text-info">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+            <a href="" class="btn btn-default-green">Ticket now</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 clear-sm">
+          <div class="wrap-service">
+            <img class="mb-3" src="{% static 'fonts/svg/phone.svg' %}" height="65" alt="">
+            <div class="heading">Phone Contact</div>
+            <div class="text-info">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+            <a href="" class="btn btn-default-green">Phone now</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 clear-md">
+          <div class="wrap-service">
+            <img class="mb-3" src="{% static 'fonts/svg/book.svg' %}" height="65" alt="">
+            <div class="heading">Check Knowledge base</div>
+            <div class="text-info">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+            <a href="" class="btn btn-default-green">Knowledge base</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="wrap-service">
+            <img class="mb-3" src="{% static 'fonts/svg/document.svg' %}" height="65" alt="">
+            <div class="heading">Learn FAQs</div>
+            <div class="text-info">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+            <a href="" class="btn btn-default-green">Learn</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="wrap-service">
+            <img class="mb-3" src="{% static 'fonts/svg/calendar.svg' %}" height="65" alt="">
+            <div class="heading">Support 24x7x365</div>
+            <div class="text-info">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+            <a href="" class="btn btn-default-green">Support</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 
+*******************
+CONTACT FORM  
+*******************
+-->
+<section class="sec-normal">
+  <div class="register contact-us">
+    <div class="container">
+      <div class="row b-solid m-0">
+        <div class="col-md-12 col-lg-4 bg-helpdesk overlay">
+          <div class="form-contact c-grey">
+            <i class="icon-helpdesk support"></i>
+            <h3 class="subtitle">We will help you to choose the best plan!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <div class="info">
+              <a class="c-grey" href="tel:+000111222333">+80 234 111 2233</a><br>
+              <a class="c-grey"  href="mailto:support@cloudy.com">support@cloudy.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-8 sec-bg1">
+          <div class="form-contact">
+            <div class="subtitle">We will help you to choose the best plan!</div>
+            <form id="contactForm" method="POST" class="comments-form">
+              <input id="name" type="text" name="name" placeholder="Name" class="input" required="">
+              <div class="row">
+                <div class="col-md-12 col-lg-6">
+                  <input id="email" type="email" name="email" placeholder="E-mail" class="input" required="">
+                </div>
+                <div class="col-md-12 col-lg-6">
+                  <input id="phone" type="number" name="phone" placeholder="Phone" class="input" required="">
+                </div>
+              </div>
+              <textarea id="message" rows="4" name="message" class="input comment" placeholder="Comment..."></textarea>
+              <div class="text-right text-xs-center">
+                <input type="submit" class="btn btn-default-green-fill float-left button" value="submit">
+              </div>
+              <h5 id="msgSubmit" class="text-right text-success"> Message Submitted!</h5>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock body %}

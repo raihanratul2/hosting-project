@@ -1,0 +1,400 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock title %}
+{% block body %}
+<!-- 
+    *******************
+    BANNER
+    ******************* 
+    -->
+    <div class="top-header item5 overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-7 col-lg-8">
+              <div class="wrapper">
+                <div class="heading">Dedicated Servers</div>
+                <div class="subheading">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-5 col-lg-4">
+              <div class="wrapper float-right pt-2 w-100 text-center">
+                <div class="subheading">
+                  <a href="index.html" class="link">home</a> <i class="fas fa-star"></i>
+                  <a href="#" class="link">pages</a> <i class="fas fa-star"></i>
+                  <a href="services.html" class="link active">dedicated</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 
+      *******************
+      PRICING TABLES   
+      ******************* 
+      -->
+      <section class="pricing special sec-up">
+        <div class="container">
+          <div class="sec-main sec-bg1">
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <h2 class="section-heading">Dedicated Server from Cloudy 7</h2>
+                <p class="section-subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  <a class="golink" href="#scroll">Go to compare features between servers</a>
+                </p>
+              </div>
+              <div class="col-md-4 col-lg-4">
+                <div class="wrapper first">
+                  <img class="mb-3" src="{% static 'fonts/svg/managedserver.svg' %}" height="65" alt="">
+                  <div class="title">Managed Server</div>
+                  <div class="fromer">cPanel</div>
+                  <div class="price"><sup>$</sup>120.99 <span class="period">/mo</span></div>
+                  <ul class="list-info">
+                    <li>Intel E3-126000</li>
+                    <li>Dual Core</li>
+                    <li>8GB RAM</li>
+                    <li>1TB SSD</li>
+                    <li>10TB Bandwidth</li>
+                    <li><div class="plans badge bg-green">Full</div> Root Access</li>
+                  </ul>
+                  <a href="" class="btn btn-default-green-fill">Order now</a>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-4">
+                <div class="wrapper">
+                  <div class="plans badge feat bg-green">Most Popular</div>
+                  <img class="mb-3" src="{% static 'fonts/svg/linuxserver.svg' %}" height="65" alt="">
+                  <div class="title">Linux Server</div>
+                  <div class="fromer">cPanel</div>
+                  <div class="price"><sup>$</sup>90.00 <span class="period">/mo</span></div>
+                  <ul class="list-info">
+                    <li>Intel E3-1220000</li>
+                    <li>Dual Core</li>
+                    <li>4GB RAM</li>
+                    <li>512GB HDD</li>
+                    <li>5TB Bandwidth</li>
+                    <li><div class="plans badge bg-green">Full</div> Root Access</li>
+                  </ul>
+                  <a href="" class="btn btn-default-green-fill">Configure</a>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-4">
+                <div class="wrapper third">
+                  <img class="mb-3" src="{% static 'fonts/svg/windowserver.svg' %}" height="65" alt="">
+                  <div class="title">Windows Server</div>
+                  <div class="fromer">Plesk Onyx</div>
+                  <div class="price"><sup>$</sup>210.99 <span class="period">/mo</span></div>
+                  <ul class="list-info">
+                    <li>Intel E3-1265L00</li>
+                    <li>Quad Core</li>
+                    <li>16GB RAM</li>
+                    <li>1TB SSD</li>
+                    <li>15TB Bandwidth</li>
+                    <li><div class="plans badge bg-green">Full</div> Root Access</li>
+                  </ul>
+                  <a href="" class="btn btn-default-green-fill">Configure</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 
+      *******************
+      WHY CHOOSE SERVER
+      ******************* 
+      -->
+      <section class="services classic sec-normal mt-150 overlay item5">
+        <div class="container">
+          <div class="service-wrap">
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <h2 class="section-heading text-white">Why choose Dedicated Server?</h2>
+                <p class="section-subheading text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <div class="service-section">
+                  <img src="{% static 'fonts/svg/code.svg' %}" height="60" alt="">
+                  <div class="title">Full Root Access</div>
+                  <p class="subtitle">
+                    Excepteur sint occaecat cupidatat non proident dolor 
+                  </p>
+                  <a href="" class="btn btn-default-green">Read more</a>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <div class="service-section">
+                  <img src="{% static 'fonts/svg/chart.svg' %}" height="60" alt="">
+                  <div class="title">Instant Provisioning</div>
+                  <p class="subtitle">
+                    Duis aute irure dolor in reprehenderit in voluptate velit  
+                  </p>
+                  <a href="" class="btn btn-default-green">Read more</a>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <div class="service-section">
+                  <img src="{% static 'fonts/svg/clock.svg' %}" height="60" alt="">
+                  <div class="title">99.9% Uptime</div>
+                  <p class="subtitle">
+                    Duis aute irure dolor in reprehenderit in voluptate velit  
+                  </p>
+                  <a href="" class="btn btn-default-green">Read more</a>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <div class="service-section">
+                  <div class="plans badge feat bg-green">Softaculous</div> 
+                  <img src="{% static 'fonts/svg/support.svg' %}" height="60" alt="">
+                  <div class="title">System Admin Support</div>
+                  <p class="subtitle">
+                    Excepteur sint occaecat cupidatat non proident voluptate
+                  </p>
+                  <a href="" class="btn btn-default-green">Read more</a>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <div class="service-section">
+                  <div class="plans badge feat bg-green">Control Panel</div> 
+                  <img src="{% static 'fonts/svg/window.svg' %}" height="60" alt="">
+                  <div class="title">Intuitive Dashboard</div>
+                  <p class="subtitle">
+                    Excepteur sint occaecat cupidatat non proident dolor 
+                  </p>
+                  <a href="" class="btn btn-default-green">Read more</a>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <div class="service-section">
+                  <img src="{% static 'fonts/svg/money.svg' %}" height="60" alt="">
+                  <div class="title">30 Day Money-Back policy</div>
+                  <p class="subtitle">
+                    Excepteur sint occaecat cupidatat non proident voluptate
+                  </p>
+                  <a href="" class="btn btn-default-green">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </section>
+      <!-- 
+      *******************
+      PRICING TABLES
+      ******************* 
+      -->
+      <section id="scroll" class="sec-normal sec-bg1">
+        <div class="best-plans pricing classic">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h2 class="section-heading">Compare features between Servers</h2><br>
+                <div class="btn-group-toggle" data-toggle="buttons">
+                  <label class="btn p-3 border-0 active">
+                    <input type="radio" name="options" id="option1" checked> All Locations
+                  </label>
+                  <label class="btn p-3 border-0">
+                    <input type="radio" name="options" id="option2"> New York
+                  </label>
+                  <label class="btn p-3 border-0">
+                    <input type="radio" name="options" id="option3"> Atlanta
+                  </label>
+                  <label class="btn p-3 border-0">
+                    <input type="radio" name="options" id="option4"> Moscow
+                  </label>
+                  <label class="btn p-3 border-0">
+                    <input type="radio" name="options" id="option5"> Spain
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="table-responsive-lg">
+                  <table class="table compare mt-5">
+                    <thead>
+                      <tr>
+                        <td class="bb-green title">Dedicated Processors</td>
+                        <td class="bb-green title">Memory</td>
+                        <td class="bb-green title">Storage</td>
+                        <td class="bb-green title">Monthly</td>
+                        <td class="bb-green title">Availability</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><div class="badge bg-green mr-1">HOT</div> E3-1230 v3 3.3GHz Haswell | 4 Cores</td>
+                        <td>32GB</td>
+                        <td>320GB SSD</td>
+                        <td><span class="ltgh">$99.00</span>  <b class="c-green">$59.00</b></td>
+                        <td><a href="" class="btn btn-default-green-fill">Config</a></td>
+                      </tr>
+                      <tr>
+                        <td><div class="badge bg-green mr-1">NEW</div> E3-1230 v5 3.4GHz Skylake | 4 Cores</td>
+                        <td>32GB</td>
+                        <td>520GB SSD</td>
+                        <td><span class="ltgh">$177.00</span>  <b class="c-green">$120.00</b></td>
+                        <td><a href="" class="btn btn-default-green-fill">Config</a></td>
+                      </tr>
+                      <tr>
+                        <td><div class="badge bg-green mr-1">SALE</div> E3-1230 v5 3.4GHz Skylake | 8 Cores</td>
+                        <td>64GB</td>
+                        <td>960GB SSD</td>
+                        <td><span class="ltgh">$290.99</span>  <b class="c-green">$239.00</b></td>
+                        <td><a href="" class="btn btn-default-fill disabled">Sold out</a></td>
+                      </tr>
+                      <tr>
+                        <td class="border-0">2x E5-2620 v4 2.1GHz Broadwell | 16 Cores</td>
+                        <td class="border-0">128GB</td>
+                        <td class="border-0">4x 960GB SSD</td>
+                        <td class="border-0"><span class="ltgh">$520.00</span>  <b class="c-green">$410.00</b></td>
+                        <td class="border-0"><a href="" class="btn btn-default-green-fill">Config</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 
+      *******************
+      SPECIFICATIONS
+      ******************* 
+      -->
+      <section class="sec-normal">
+        <div class="best-plans pricing classic">
+          <div class="container">
+            <div class="sec-main sec-bg1 sec-grad-purple">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h2 class="section-heading">Dedicated Server Technical Specifications</h2>
+                  <p class="section-subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="col-sm-12">
+                  <div class="table-responsive-lg">
+                    <table class="table sample mt-5">
+                      <thead>
+                        <tr>
+                          <td>
+                            <div class="title">Features </div> 
+                          </td>
+                          <td>
+                            <span class="title">Performance</span> <span class="badge bg-green">INTEL</span>
+                          </td>
+                          <td>
+                            <div class="title">Boosters</div>
+                          </td>
+                          <td>
+                            <div class="title">Support</div>
+                          </td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="title-table" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Instant Provisioning
+                            </div>
+                          </td>
+                          <td>Intel Xeon</td>
+                          <td>cPanel</td>
+                          <td>Hardware</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="title-table" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">CentOS / Ubuntu
+                            </div>
+                          </td>
+                          <td>SuperMicro</td>
+                          <td>WHMCS</td>
+                          <td>Network</td>
+                        </tr>
+                        <tr>
+                          <td class="title-table">CloudLinux</td>
+                          <td>Juniper Networks</td>
+                          <td>IPs</td>
+                          <td>Monitoring</td>
+                        </tr>
+                        <tr>
+                          <td class="title-table">Server Rebuild</td>
+                          <td>DDos mitigation</td>
+                          <td>SAN storage</td>
+                          <td>Server Hardening</td>
+                        </tr>
+                        <tr>
+                          <td class="border-0"><a href="" class="btn btn-default-green">All Specs</a></td>
+                          <td class="border-0"><a href="" class="btn btn-default-green">All Specs</a></td>
+                          <td class="border-0"><a href="" class="btn btn-default-green">All Specs</a></td>
+                          <td class="border-0"><a href="" class="btn btn-default-green">All Specs</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 
+      *******************
+      VIDEO
+      ******************* 
+      -->
+      <section class="services classic overlay item3">
+        <div class="container">
+          <div class="sec-main shadow-none">
+            <div class="service-wrap">
+              <div class="row">
+                <div class="col-sm-12 text-center">
+                  <a href="#" class="btn btn-default-green-fill" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/D86RtevtfrA">Watch Cloudy Data Center</a><br><br>
+                  <h2 class="section-heading text-white">The best place for your European Data Center</h2>
+                  <div id="videoModal" class="modal bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+                    <button type="button" class="close rebutton" data-dismiss="modal" aria-hidden="true">&#x2715;</button>
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content border-0">
+                          <div>
+                              <iframe class="border-0 movie"></iframe>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 
+      *******************
+      SECTIONS
+      *******************
+      -->
+      <section>
+        <div class="h-services">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="wrap-service">
+                  <i class="icon-indicateleft pasl opacity-3"></i>
+                  <img class="mb-3" src="{% static 'fonts/svg/cloudfiber.svg' %}" height="65" alt="">
+                  <div class="heading">Cloud Hosting</div>
+                  <div class="text-info">Lorem Ipsum is simply dummy text of the printing and typesetting.</div>
+                  <a href="hosting.html" class="btn btn-default-green">Check now</a>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="wrap-service">
+                  <i class="icon-indicateright pasr opacity-3"></i>
+                  <img class="mb-3" src="{% static 'fonts/svg/vps.svg' %}" height="65" alt="">
+                  <div class="heading">Cloud VPS</div>
+                  <div class="text-info">Lorem Ipsum is simply dummy text of the printing and typesetting.</div>
+                  <a href="vps.html" class="btn btn-default-green">Check now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+{% endblock body %}

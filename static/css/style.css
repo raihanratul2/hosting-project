@@ -771,6 +771,9 @@ a.plans.badge.feat:hover {
 .active {
     color: #69c399 !important;
 }
+.hov:hover{
+    color: #69c399  !important;
+}
 .menu-wrap.navigation-menu.classic .nav-menu .main-menu a {
     font-family: "Open Sans";
 }
@@ -917,6 +920,9 @@ a.plans.badge.feat:hover {
     position: static;
     margin-left: 10px;
     color: #fff;
+}
+.navigation-menu.classic .nav-menu .main-menu > .menu-item.menu-item.menu-item-has-children > a:hover {
+    color: #69c399 !important;
 }
 .navigation-menu.classic .nav-menu .menu-toggle .icon {
     background-color: #FFF;
@@ -1828,7 +1834,7 @@ a.plans.badge.feat:hover {
     right: 0px;
 }
 .pricing.slider .slides-toggle .slide-next span {
-    ;
+    
     display: inline-block;
     text-align: left;
     margin-top: 50px;

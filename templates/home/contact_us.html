@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}{% endblock title %}
 {% block body %}
 <!-- 
@@ -13,8 +14,7 @@ BANNER
             <div class="wrapper">
             <div class="heading">Contact us</div>
             <div class="subheading">
-                <a href="index.html" class="link">home</a> <i class="fas fa-star"></i>
-                <a href="#" class="link">pages</a> <i class="fas fa-star"></i>
+                <a href="{% url 'home' %}" class="link">home</a> <i class="fas fa-star"></i>
                 <a href="services.html" class="link active">contact us</a>
             </div>
             </div>
@@ -22,19 +22,19 @@ BANNER
         <div class="col-sm-12 col-md-7 col-lg-8">
             <div class="specs float-right">
             <div class="">
-                <img src="fonts/svg/livechat.svg" height="42" alt="">
+                <img src="{% static 'fonts/svg/livechat.svg' %}" height="42" alt="">
                 <p>Go Live Chat</p>
             </div>
             <div class="">
-                <img src="fonts/svg/emailopen.svg" height="42" alt="">
+                <img src="{% static 'fonts/svg/emailopen.svg' %}" height="42" alt="">
                 <p>Send Ticket</p>
             </div>
             <div class="">
-                <img src="fonts/svg/phone.svg" height="42" alt="">
+                <img src="{% static 'fonts/svg/phone.svg' %}" height="42" alt="">
                 <p>Phone Contact</p>
             </div>
             <div class="">
-                <img src="fonts/svg/book.svg" height="42" alt="">
+                <img src="{% static 'fonts/svg/book.svg' %}" height="42" alt="">
                 <p>Knowledge base</p>
             </div>
             </div>
@@ -58,7 +58,7 @@ BANNER
             </div>
             <div class="col-md-12 col-lg-4">
                 <div class="wrap-service">
-                <img src="img/contact01.jpg" alt="team" class="img-responsive">
+                <img src="{% static 'img/contact01.jpg' %}" alt="team" class="img-responsive">
                 <div class="heading">Melbourne</div>
                 <p><small>Call us: + (123) 1300-656-1046</small></p>
                 <div class="text-info">HeadQuarters - No.02 - 399-0 Lorem Street City Melbourne</div>
@@ -66,7 +66,7 @@ BANNER
             </div>
             <div class="col-md-12 col-lg-4">
                 <div class="wrap-service">
-                <img src="img/contact02.jpg" alt="team" class="img-responsive">
+                <img src="{% static 'img/contact02.jpg' %}" alt="team" class="img-responsive">
                 <div class="heading">London</div>
                 <p><small>Call us: + (123) 1300-656-1046</small></p>
                 <div class="text-info">Office - No.02 - 399-0 Lorem Street City London</div>
@@ -74,7 +74,7 @@ BANNER
             </div>
             <div class="col-md-12 col-lg-4">
                 <div class="wrap-service">
-                <img src="img/contact03.jpg" alt="team" class="img-responsive">
+                <img src="{% static 'img/contact03.jpg' %}" alt="team" class="img-responsive">
                 <div class="heading">Portugal</div>
                 <p><small>Call us: + (123) 1300-656-1046</small></p>
                 <div class="text-info">Office - No.03 - 399-0 Lorem Street City Portugal</div>
